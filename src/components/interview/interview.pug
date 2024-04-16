@@ -1,0 +1,7 @@
+mixin interview(interviewData, classes)
+    .interview(class=classes)
+        p.interview__question!=interviewData.question
+        each answer in interviewData.answers
+            p.interview__answer-block
+                span.interview__name!=`${answer.name}: `
+                span.interview__answer!=answer.answer

@@ -1,0 +1,19 @@
+mixin homage(blockData)
+    .homage
+        .homage__title-section
+            .homage__title-block
+                h2.title.homage__title!=blockData.title
+                p.homage__text!=blockData.text
+            .collage.collage-1
+                .collage-1__rect.collage-1__rect--1(aria-hidden)
+                img.img.collage-1__img.collage-1__img--1(src="~/assets/images/homage-1.png", alt="Фотография Юлии и Анны Персильд")
+                .collage-1__rect.collage-1__rect--2(aria-hidden)
+        .homage__interview-section
+            .collage.collage-2
+                .collage.collage-3
+                    .collage-3__rect.collage-3__rect--1(aria-hidden)
+                    img.img.collage-3__img.collage-3__img--1(src="~/assets/images/homage-2.png", alt="Фотография Анны Персильд")
+                    img.img.collage-3__img.collage-3__img--2(src="~/assets/images/homage-3.png", alt="Фотография Юлии Персильд")
+                    .collage-3__rect.collage-3__rect--2(aria-hidden)
+                img.img.collage-2__img(src="~/assets/images/homage-4.png", alt="Туфли ECCO")
+            +interview(blockData.interview)

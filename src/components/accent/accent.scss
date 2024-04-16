@@ -1,0 +1,148 @@
+#tpl {
+    .accent {
+        margin-bottom: em(69, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: em(97, $basePxMb);
+        }
+
+        &__title-block {
+            margin-bottom: em(37, $basePxDp);
+            margin-left: em(672, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(-91, $basePxMb);
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        &__title {
+            margin-bottom: em(37, $fsTitle);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(21, $fsTitleMb);
+            }
+        }
+
+        &__text {
+            margin-left: em(53, $basePxDp);
+            width: em(526, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-left: 0;
+                width: em(242, $basePxMb);
+            }
+        }
+
+        &__interview-section {
+            display: flex;
+
+            @media (--viewport-portrait-layout) {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .interview {
+                @media (--viewport-portrait-layout) {
+                    width: em(285, $basePxMb);
+                }
+
+                &__question {
+                    width: em(357, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        width: 100%;
+                    }
+                }
+
+                &__answer-block {
+                    margin-left: em(85, $basePxDp);
+                    width: em(496, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__collage {
+            width: em(801, $basePxDp);
+            height: em(712, $basePxDp);
+            position: relative;
+
+            @media (--viewport-portrait-layout) {
+                width: 100%;
+                height: em(420, $basePxMb);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: em(40, $basePxMb);
+            }
+        }
+
+        &__rect {
+            position: absolute;
+            width: em(1440, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                width: 100%;
+            }
+
+            &--1 {
+                height: em(109, $basePxDp);
+                background-color: $color-red;
+                bottom: 0;
+
+                @media (--viewport-portrait-layout) {
+                    height: em(136, $basePxMb);
+                }
+            }
+
+            &--2 {
+                height: em(52, $basePxDp);
+                background: linear-gradient(0deg, rgb(0 0 0 / 30%) 0%, rgb(0 0 0 / 0%) 100%);
+                bottom: 0;
+
+                @media (--viewport-portrait-layout) {
+                    height: em(52, $basePxMb);
+                }
+            }
+        }
+
+        &__img {
+            position: absolute;
+
+            @media (--viewport-portrait-layout) {
+                position: relative;
+            }
+
+            &--1 {
+                width: em(903, $basePxDp);
+                bottom: 0;
+                left: em(-17, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(321, $basePxMb);
+                    left: auto;
+                }
+            }
+
+            &--2 {
+                width: em(657, $basePxDp);
+                bottom: em(13, $basePxDp);
+                right: em(-648, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

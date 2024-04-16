@@ -1,0 +1,239 @@
+#tpl {
+    .functionality {
+        --color-accent: #{$color-blue};
+
+        margin-bottom: em(-47, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: 0;
+        }
+
+        &__collage {
+            &--1 {
+                display: flex;
+                align-items: center;
+                gap: em(39, $basePxDp);
+                margin-left: em(-10, $basePxDp);
+                margin-bottom: em(12, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    flex-direction: column;
+                    margin-left: 0;
+                    margin-bottom: em(-19, $basePxMb);
+                    gap: 0;
+                }
+            }
+
+            &--2 {
+                position: relative;
+                z-index: -1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &--3 {
+                position: relative;
+                margin-left: em(-82, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    margin-left: em(-32, $basePxMb);
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: em(22, $basePxMb);
+                }
+            }
+
+            &--4 {
+                position: absolute;
+                top: em(56, $basePxDp);
+                left: em(322, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    top: em(-65, $basePxMb);
+                    left: em(113, $basePxMb);
+                }
+            }
+        }
+
+        &__img {
+            &--1 {
+                margin-top: em(233 - 151, $basePxDp);
+                width: em(672, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    margin-top: 0;
+                    width: em(342, $basePxMb);
+                    margin-left: em(20, $basePxMb);
+                    margin-bottom: em(-145, $basePxMb);
+                }
+            }
+
+            &--2 {
+                --k-progress-x: -0.3;
+
+                width: em(629, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(328, $basePxMb);
+                    margin-left: em(26, $basePxMb);
+                }
+            }
+
+            &--3 {
+                --k-progress-x: 0.2;
+
+                position: absolute;
+                width: em(1369, $basePxDp);
+                top: em(-509, $basePxDp);
+                left: em(41, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(344, $basePxMb);
+                    top: em(-128, $basePxMb);
+                    left: auto;
+                }
+            }
+
+            &--4 {
+                --from-x: #{em(-1016, $basePxDp)};
+
+                width: em(492, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(180, $basePxMb);
+                }
+            }
+
+            &--5 {
+                position: absolute;
+                width: em(604, $basePxDp);
+                top: 0;
+                left: 0;
+
+                @media (--viewport-portrait-layout) {
+                    width: em(301, $basePxMb);
+                    position: static;
+                }
+            }
+
+            &--6 {
+                position: absolute;
+                width: em(246, $basePxDp);
+                top: em(150, $basePxDp);
+                left: em(129, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(123, $basePxMb);
+                    top: em(75, $basePxMb);
+                    left: em(64, $basePxMb);
+                }
+            }
+
+            &--7 {
+                width: em(620, $basePxDp);
+                margin-left: em(-10, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(304, $basePxMb);
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &__title-block {
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            margin-bottom: em(93, $fsTitle);
+
+            @media (--viewport-portrait-layout) {
+                font-size: em(32, $basePxMb);
+                margin-bottom: em(31, 32);
+            }
+        }
+
+        &__figure {
+            width: em(1440, $basePxDp);
+            height: em(301, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                width: vw(360, true);
+                height: em(172, $basePxMb);
+            }
+
+            &::before {
+                background-image: url("~/assets/images/figure-1.svg?inline");
+
+                @media (--viewport-portrait-layout) {
+                    background-image: url("~/assets/images/figure-1-mb.svg?inline");
+                }
+            }
+        }
+
+        &__text {
+            position: absolute;
+            bottom: em(75, $basePxDp);
+            max-width: em(477, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                bottom: em(32, $basePxMb);
+                max-width: em(263, $basePxMb);
+            }
+        }
+
+        &__interview-section {
+            display: flex;
+            justify-content: space-between;
+
+            @media (--viewport-portrait-layout) {
+                flex-direction: column;
+            }
+        }
+
+        &__interview-block {
+            display: flex;
+
+            @media (--viewport-portrait-layout) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .interview {
+                width: em(526, $basePxDp);
+                margin-left: em(64, $basePxDp);
+                margin-top: em(71, $basePxDp);
+                margin-bottom: em(-80, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    margin: 0;
+                    margin-bottom: em(-29, $basePxMb);
+                    width: em(293, $basePxMb);
+                }
+            }
+        }
+
+        &__line {
+            height: em(996, $basePxDp);
+            margin-top: em(30, $basePxDp);
+            background-color: $color-pink;
+
+            @media (--viewport-portrait-layout) {
+                display: none;
+            }
+        }
+
+        &__interview-content {
+            @media (--viewport-portrait-layout) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

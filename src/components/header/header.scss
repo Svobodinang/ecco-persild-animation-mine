@@ -1,0 +1,120 @@
+#tpl {
+    .header {
+        text-align: center;
+        margin-bottom: em(261, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: 0;
+        }
+
+        &__content {
+            padding: em(48, $basePxDp) em(48, $basePxDp) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: em(154, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                padding: em(36, $basePxMb) em(29, $basePxMb) 0;
+                margin-bottom: em(115, $basePxMb);
+            }
+        }
+
+        &__title {
+            color: $color-red;
+            margin-bottom: em(28, 115);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(12, 55);
+                max-width: em(301, 55);
+            }
+        }
+
+        &__subtitle {
+            max-width: em(400, 28);
+            margin-bottom: em(47, 28);
+
+            @media (--viewport-portrait-layout) {
+                max-width: em(232, 16);
+                margin-bottom: em(23, 16);
+            }
+        }
+
+        &__text {
+            max-width: em(470, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                max-width: em(242, $basePxMb);
+            }
+        }
+
+        .header-collage {
+            position: relative;
+
+            &__rect {
+                width: 100%;
+
+                &--accent {
+                    background-color: $color-red;
+                    height: em(136, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        height: em(136, $basePxMb);
+                    }
+                }
+
+                &--shadow {
+                    height: em(52, $basePxDp);
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background: linear-gradient(0deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 0%) 100%);
+
+                    @media (--viewport-portrait-layout) {
+                        height: em(51, $basePxMb);
+                    }
+                }
+            }
+
+            &__img {
+                position: absolute;
+
+                &--1 {
+                    bottom: 0;
+                    left: 0;
+                    width: em(431, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        width: em(181, $basePxMb);
+                    }
+                }
+
+                &--2 {
+                    --k-progress-y: 0.2;
+
+                    bottom: em(-249, $basePxDp);
+                    right: em(-57, $basePxDp);
+                    width: em(945, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        display: none;
+                    }
+                }
+
+                &--3 {
+                    --from-x: #{em(302 + 58, $basePxDp)};
+
+                    bottom: em(82, $basePxDp);
+                    right: em(58, $basePxDp);
+                    width: em(302, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        bottom: em(-26, $basePxMb);
+                        right: em(21, $basePxMb);
+                        width: em(152, $basePxMb);
+                    }
+                }
+            }
+        }
+    }
+}

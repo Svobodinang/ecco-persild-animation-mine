@@ -1,0 +1,38 @@
+#tpl {
+    .footer {
+        background-color: $color-red;
+        padding: em(65, $basePxDp) 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+
+        @media (--viewport-portrait-layout) {
+            padding: em(126, $basePxMb) 0;
+        }
+
+        &__img {
+            --from-x: #{em(565 + 36, $basePxDp)};
+
+            position: absolute;
+            width: em(565, $basePxDp);
+            top: em(-524, $basePxDp);
+            right: em(36, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                width: em(314, $basePxMb);
+                top: em(-293, $basePxMb);
+                right: em(-20, $basePxMb);
+            }
+        }
+
+        &__text {
+            max-width: em(458, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                max-width: em(242, $basePxMb);
+            }
+        }
+    }
+}

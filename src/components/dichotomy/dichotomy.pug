@@ -1,0 +1,12 @@
+mixin dichotomy(blockData)
+    .dichotomy
+        .dichotomy__title-section
+            .dichotomy__title-block
+                h2.title.dichotomy__title!=blockData.title
+                p.dichotomy__text!=blockData.text
+            img.img.dichotomy__img.dichotomy__img--1(src="~/assets/images/dichotomy-1.png", alt="Фотография Юлии и Анны Персильд")
+        .dichotomy__interview-section
+            +interview(blockData.interview)
+            .line.dichotomy__line(aria-hidden)
+            .collage
+                img.img.collage__img(src="~/assets/images/dichotomy-2.png", alt="Фотография Юлии Персильд")

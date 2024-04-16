@@ -1,0 +1,238 @@
+#tpl {
+    .homage {
+        --color-accent: #{$color-blue};
+
+        margin-bottom: em(152, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: em(54, $basePxMb);
+        }
+
+        &__title-section {
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(35, $basePxMb);
+            }
+        }
+
+        &__title-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: em(44, $basePxDp);
+            margin-bottom: em(-28, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                gap: em(22, $basePxMb);
+                margin-bottom: em(3, $basePxMb);
+            }
+        }
+
+        &__title {
+            @media (--viewport-portrait-layout) {
+                font-size: em(36, $basePxMb);
+            }
+        }
+
+        &__text {
+            width: em(477, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                width: em(272, $basePxMb);
+            }
+        }
+
+        .collage {
+            position: relative;
+
+            &-1 {
+                @media (--viewport-portrait-layout) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &__img {
+                    &--1 {
+                        position: relative;
+                        width: em(1440, $basePxDp);
+
+                        @media (--viewport-portrait-layout) {
+                            width: em(360, $basePxMb);
+                        }
+                    }
+                }
+
+                &__rect {
+                    position: absolute;
+                    width: em(1440, $basePxDp);
+                    bottom: 0;
+
+                    @media (--viewport-portrait-layout) {
+                        width: 100%;
+                    }
+
+                    &--1 {
+                        height: em(180, $basePxDp);
+                        background-color: $color-pink;
+
+                        @media (--viewport-portrait-layout) {
+                            height: em(45, $basePxMb);
+                        }
+                    }
+
+                    &--2 {
+                        height: em(91, $basePxDp);
+                        background: linear-gradient(0deg, rgb(0 0 0 / 15%) 0%, rgb(0 0 0 / 14.9%) 6.67%, rgb(0 0 0 / 14.5%) 13.33%, rgb(0 0 0 / 13.8%) 20%, rgb(0 0 0 / 12.8%) 26.67%, rgb(0 0 0 / 11.5%) 33.33%, rgb(0 0 0 / 10%) 40%, rgb(0 0 0 / 8.36%) 46.67%, rgb(0 0 0 / 6.64%) 53.33%, rgb(0 0 0 / 4.98%) 60%, rgb(0 0 0 / 3.48%) 66.67%, rgb(0 0 0 / 2.21%) 73.33%, rgb(0 0 0 / 1.22%) 80%, rgb(0 0 0 / 0.533%) 86.67%, rgb(0 0 0 / 0.13%) 93.33%, rgb(0 0 0 / 0%) 100%);
+
+                        @media (--viewport-portrait-layout) {
+                            height: em(23, $basePxMb);
+                        }
+                    }
+                }
+            }
+
+            &-2 {
+                width: em(804, $basePxDp);
+                height: em(750, $basePxDp);
+                position: relative;
+
+                @media (--viewport-portrait-layout) {
+                    order: 2;
+                    width: em(360, $basePxMb);
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: em(39, $basePxMb);
+                }
+
+                &__img {
+                    --from-x: #{em(651 + 117, $basePxDp)};
+
+                    position: absolute;
+                    width: em(592, $basePxDp);
+                    bottom: em(-6, $basePxDp);
+                    right: em(-527, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        position: static;
+                        width: em(298, $basePxMb);
+                        right: auto;
+                        bottom: auto;
+                        margin-right: em(34 - 28, $basePxMb);
+                    }
+                }
+            }
+
+            &-3 {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                @media (--viewport-portrait-layout) {
+                    height: em(333, $basePxMb);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &__img {
+                    position: absolute;
+
+                    &--1 {
+                        width: em(867, $basePxDp);
+                        bottom: 0;
+                        left: em(-173, $basePxDp);
+
+                        @media (--viewport-portrait-layout) {
+                            width: em(415, $basePxMb);
+                            left: em(-78, $basePxMb);
+                        }
+                    }
+
+                    &--2 {
+                        --from-scale: 0;
+
+                        width: em(273, $basePxDp);
+                        bottom: em(113, $basePxDp);
+                        left: em(312, $basePxDp);
+
+                        @media (--viewport-portrait-layout) {
+                            width: em(131, $basePxMb);
+                            bottom: em(54, $basePxMb);
+                            left: em(154, $basePxMb);
+                        }
+                    }
+                }
+
+                &__rect {
+                    position: absolute;
+                    width: em(1440, $basePxDp);
+                    bottom: 0;
+
+                    @media (--viewport-portrait-layout) {
+                        width: 100vw;
+                    }
+
+                    &--1 {
+                        height: em(74, $basePxDp);
+                        background-color: $color-pink;
+
+                        @media (--viewport-portrait-layout) {
+                            height: em(34, $basePxMb);
+                        }
+                    }
+
+                    &--2 {
+                        height: em(34, $basePxDp);
+                        background: linear-gradient(0deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 19.8%) 6.67%, rgb(0 0 0 / 19.3%) 13.33%, rgb(0 0 0 / 18.4%) 20%, rgb(0 0 0 / 17.1%) 26.67%, rgb(0 0 0 / 15.4%) 33.33%, rgb(0 0 0 / 13.4%) 40%, rgb(0 0 0 / 11.1%) 46.67%, rgb(0 0 0 / 8.85%) 53.33%, rgb(0 0 0 / 6.64%) 60%, rgb(0 0 0 / 4.64%) 66.67%, rgb(0 0 0 / 2.95%) 73.33%, rgb(0 0 0 / 1.63%) 80%, rgb(0 0 0 / 0.71%) 86.67%, rgb(0 0 0 / 0.173%) 93.33%, rgb(0 0 0 / 0%) 100%);
+
+                        @media (--viewport-portrait-layout) {
+                            height: em(16, $basePxMb);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__interview-section {
+            display: flex;
+
+            @media (--viewport-portrait-layout) {
+                flex-direction: column;
+                align-items: center;
+                gap: em(16, $basePxMb);
+            }
+        }
+
+        .interview {
+            margin-top: em(216, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-top: 0;
+                width: em(293, $basePxMb);
+            }
+
+            @media (--viewport-portrait-layout) {
+                order: 1;
+            }
+
+            &__question {
+                width: em(490, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: 100%;
+                }
+            }
+
+            &__answer-block {
+                width: em(448, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

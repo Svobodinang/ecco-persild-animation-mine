@@ -1,0 +1,12 @@
+mixin core(blockData)
+    .core
+        .core__title-section
+            .core__title-block
+                h2.title.core__title!=blockData.title
+                p.core__text!=blockData.text
+            .collage.collage-1
+                img.img.collage-1__img.collage-1__img--1(src="~/assets/images/core-1.png", alt="Фотография Анны Персильд")
+                img.img.collage-1__img.collage-1__img--2(src="~/assets/images/core-2.png", alt="Фотография Анны Персильд")
+        .core__interview-section
+            img.img.core__img-interview(src="~/assets/images/core-3.png", alt="Фотография Анны Персильд")
+            +interview(blockData.interview)

@@ -1,0 +1,109 @@
+#tpl {
+    .outdoor {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0 em(110, $basePxDp);
+        margin-bottom: em(430, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            padding: 0;
+            margin-bottom: 0;
+            align-items: center;
+            max-width: 100vw;
+        }
+
+        &__img {
+            position: absolute;
+
+            @media (--viewport-portrait-layout) {
+                position: static;
+            }
+
+            &--1 {
+                --from-x: #{em(-853, $basePxDp)};
+
+                width: em(955, $basePxDp);
+                top: em(-122, $basePxDp);
+                left: em(-263, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(374, $basePxMb);
+                    margin-left: em(11, $basePxMb);
+                    margin-bottom: em(36, $basePxMb);
+                }
+            }
+
+            &--2 {
+                width: em(845, $basePxDp);
+                bottom: em(-525, $basePxDp);
+                right: em(-79, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(415, $basePxMb);
+                }
+            }
+        }
+
+        &__title-block {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: em(32, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(65, $basePxMb);
+            }
+        }
+
+        &__title {
+            margin-bottom: em(45, 115);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(24, 55);
+            }
+        }
+
+        &__text {
+            max-width: em(407, $basePxDp);
+        }
+
+        &__interview-block {
+            align-self: flex-end;
+            display: flex;
+            gap: em(84, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                align-self: center;
+                margin-bottom: em(43, $basePxMb);
+            }
+
+            .interview {
+                width: em(526, $basePxDp);
+                margin-top: em(31, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(292, $basePxMb);
+                    margin-top: 0;
+                }
+
+                &__question {
+                    max-width: em(435, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+
+        &__line {
+            height: em(382, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                display: none;
+            }
+        }
+    }
+}

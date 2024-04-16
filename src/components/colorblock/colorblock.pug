@@ -1,0 +1,16 @@
+mixin colorblock(blockData)
+    .colorblock
+        .colorblock__title-section
+            .colorblock__title-block
+                h2.title.colorblock__title!=blockData.title
+                p.colorblock__text!=blockData.text
+            .collage.collage-1
+                .collage-1__rect.collage-1__rect--1(aria-hidden)
+                .collage-1__rect.collage-1__rect--2(aria-hidden)
+                img.img.colorblock__img.colorblock__img--1(src="~/assets/images/colorblock-1.png", alt="Фотография Юлии Персильд")
+        .colorblock__interview-section
+            .collage.collage-2
+                img.img.colorblock__img.colorblock__img--2(src="~/assets/images/colorblock-2.png", alt="Фотография Анны Персильд")
+                img.img.colorblock__img.colorblock__img--3(src="~/assets/images/colorblock-3.png", alt="Фотография Анны Персильд")
+            .line.colorblock__line(aria-hidden)
+            +interview(blockData.interview, 'answers-big-margin-left')

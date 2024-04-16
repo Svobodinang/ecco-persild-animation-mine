@@ -1,0 +1,49 @@
+article#tpl
+    include components/header/header.pug
+    include components/outdoor/outdoor.pug
+    include components/functionality/functionality.pug
+    include components/interview/interview.pug
+    include components/meta.pug
+    include components/newFemininity/newFemininity.pug
+    include components/accent/accent.pug
+    include components/unique/unique.pug
+    include components/colorblock/colorblock.pug
+    include components/core/core.pug
+    include components/homage/homage.pug
+    include components/dichotomy/dichotomy.pug
+    include components/footer/footer.pug
+
+    style(type='text/css').
+        //- preloader styles
+        #tpl .preloader {
+            background: black;
+        }
+    
+    main.main 
+        each block in data
+            if block.component === 'header'
+                +header(block)
+            if block.component === 'outdoor'
+                +outdoor(block)
+            if block.component === 'functionality'
+                +functionality(block)
+            if block.component === 'video'
+                include components/video/video.pug
+            if block.component === 'newFemininity'
+                +newFemininity(block)
+            if block.component === 'accent'
+                +accent(block)
+            if block.component === 'unique'
+                +unique(block)
+            if block.component === 'colorblock'
+                +colorblock(block)
+            if block.component === 'core'
+                +core(block)
+            if block.component === 'homage'
+                +homage(block)
+            if block.component === 'dichotomy'
+                +dichotomy(block)
+            if block.component === 'footer'
+                +footer(block)
+
+

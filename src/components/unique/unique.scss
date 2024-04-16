@@ -1,0 +1,165 @@
+#tpl {
+    .unique {
+        --color-accent: #{$color-blue};
+
+        margin-bottom: em(133, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: em(44, $basePxMb);
+        }
+
+        &__title-block {
+            margin-bottom: em(44, $basePxDp);
+            margin-left: em(123, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(-9, $basePxMb);
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        &__title {
+            font-size: em(122, $basePxDp);
+            margin-bottom: em(39, 122);
+
+            @media (--viewport-portrait-layout) {
+                font-size: em(36, $basePxMb);
+                margin-bottom: em(22, 36);
+            }
+        }
+
+        &__text {
+            width: em(501, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                width: em(272, $basePxMb);
+            }
+        }
+
+        &__interview-section {
+            display: flex;
+            padding-left: em(123, $basePxDp);
+            position: relative;
+
+            @media (--viewport-portrait-layout) {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: em(20, $basePxMb);
+                padding-left: 0;
+            }
+        }
+
+        &__interview-block {
+            order: 1;
+
+            @media (--viewport-portrait-layout) {
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .interview {
+                @media (--viewport-portrait-layout) {
+                    width: em(293, $basePxMb);
+                }
+
+                &__question {
+                    width: em(357, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        width: 100%;
+                    }
+                }
+
+                &__answer-block {
+                    width: em(443, $basePxDp);
+
+                    @media (--viewport-portrait-layout) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__collage {
+            order: 2;
+            width: em(844, $basePxDp);
+            height: em(657, $basePxDp);
+            position: relative;
+
+            @media (--viewport-portrait-layout) {
+                order: 1;
+            }
+
+            @media (--viewport-portrait-layout) {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        &__img {
+            position: absolute;
+
+            @media (--viewport-portrait-layout) {
+                position: relative;
+            }
+
+            &.unique__img--1 {
+                --from-x: 100%;
+
+                width: em(642, $basePxDp);
+                bottom: em(137, $basePxDp);
+                right: em(-11, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(300, $basePxMb);
+                    margin-right: em(-45, $basePxMb);
+                    bottom: auto;
+                    right: auto;
+                }
+            }
+
+            &.unique__img--2 {
+                --from-scale: 0;
+
+                &.inview.from-transform.entered {
+                    transition-delay: 0.3s;
+                }
+
+                width: em(163, $basePxDp);
+                bottom: em(495, $basePxDp);
+                right: em(287, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    position: absolute;
+                    width: em(77, $basePxMb);
+                    bottom: em(175, $basePxMb);
+                    right: em(94, $basePxMb);
+                }
+            }
+
+            &--3 {
+                width: em(995, $basePxDp);
+                bottom: em(45, $basePxDp);
+                left: em(-435, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(525, $basePxMb);
+                    left: auto;
+                    bottom: auto;
+                    align-self: flex-start;
+                    margin-left: em(-288, $basePxMb);
+                    margin-top: em(-66, $basePxMb);
+                }
+            }
+        }
+    }
+}

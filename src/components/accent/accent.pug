@@ -1,0 +1,12 @@
+mixin accent(blockData)
+    section.section.accent
+        .accent__title-block
+            h2.title.accent__title!=blockData.title
+            p.accent__text!=blockData.text
+        .accent__interview-section
+            .accent__collage
+                .accent__rect.accent__rect--1(aria-hidden)
+                img.img.accent__img.accent__img--1(src="~/assets/images/accent-1.png", alt="Фотография Юлии Персильд")
+                .accent__rect.accent__rect--2(aria-hidden)
+                img.img.accent__img.accent__img--2(src="~/assets/images/accent-2.png", alt="Фотография Анны Персильд")
+            +interview(blockData.interview, 'answers-big-margin-left')

@@ -1,0 +1,137 @@
+#tpl {
+    .core {
+        --color-accent: #{$color-blue};
+
+        margin-bottom: em(190, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: em(26, $basePxMb);
+        }
+
+        &__title-section {
+            margin-bottom: em(30, $basePxDp);
+            display: flex;
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(0, $basePxMb);
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &__title-block {
+            margin-left: em(113, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        &__title {
+            margin-bottom: em(38, $fsTitle);
+
+            @media (--viewport-portrait-layout) {
+                font-size: em(36, $basePxMb);
+                margin-bottom: em(22, 36);
+            }
+        }
+
+        &__text {
+            width: em(477, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                width: em(272, $basePxMb);
+            }
+        }
+
+        &__interview-section {
+            display: flex;
+            flex-direction: column;
+            gap: em(50, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                flex-direction: column;
+                max-width: 100%;
+            }
+        }
+
+        .interview {
+            margin-left: em(123, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-left: 0;
+            }
+
+            &__question {
+                width: em(357, $basePxDp);
+            }
+
+            &__answer-block {
+                width: em(443, $basePxDp);
+            }
+        }
+
+        .collage {
+            position: relative;
+
+            &-1 {
+                width: em(697, $basePxDp);
+                height: em(258, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(360, $basePxMb);
+                    height: em(398, $basePxMb);
+                }
+
+                &__img {
+                    position: absolute;
+
+                    &--1 {
+                        --k-progress-x: 0.2;
+
+                        width: em(612, $basePxDp);
+                        bottom: em(-619, $basePxDp);
+                        left: em(-232, $basePxDp);
+
+                        @media (--viewport-portrait-layout) {
+                            width: em(208, $basePxMb);
+                            left: 0;
+                            bottom: em(62, $basePxMb);
+                        }
+                    }
+
+                    &--2 {
+                        --k-progress-x: -0.4;
+
+                        width: em(858, $basePxDp);
+                        bottom: em(-803, $basePxDp);
+                        left: em(49, $basePxDp);
+
+                        @media (--viewport-portrait-layout) {
+                            width: em(291, $basePxMb);
+                            bottom: em(0, $basePxMb);
+                            left: em(94, $basePxMb);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__img {
+            &-interview {
+                order: 2;
+                width: em(658, $basePxDp);
+                margin-left: em(33, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(522, $basePxMb);
+                    margin-left: em(9, $basePxMb);
+                }
+            }
+        }
+    }
+}

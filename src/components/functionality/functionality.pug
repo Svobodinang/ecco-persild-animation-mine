@@ -1,0 +1,24 @@
+mixin functionality(blockData)
+    section.section.functionality
+        .functionality__collage.functionality__collage--1
+            img.img.functionality__img.functionality__img--1(src="~/assets/images/functionality-1.png", alt="Обувь ECCO")
+            img.img.functionality__img.functionality__img--2(src="~/assets/images/functionality-2.png", alt="Фотография Анны и Юлии Персильд")
+        .functionality__title-block
+            h1.title.functionality__title!=blockData.title
+            .functionality__collage.functionality__collage--2
+                .functionality__figure.img-wrapper(aria-hidden)
+                img.img.functionality__img.functionality__img--3(src="~/assets/images/functionality-3.png", alt="Фотография Анны Персильд")
+            p.functionality__text!=blockData.text
+        .functionality__interview-section
+            .functionality__collage.functionality__collage--3
+                img.img.functionality__img.functionality__img--4(src="~/assets/images/functionality-4.png", alt="Фотография Анны Персильд")
+                .functionality__collage.functionality__collage--4
+                    img.img.functionality__img.functionality__img--5(src="~/assets/images/functionality-5.png", alt="Фотография кроссовка ECCO")
+                    img.img.functionality__img.functionality__img--6(src="~/assets/images/functionality-6.png", alt="Фотография Юлии Персильд")
+            .functionality__interview-block
+                .line.functionality__line(aria-hidden)
+                .functionality__interview-content
+                    +interview(blockData.interview)
+                    img.img.functionality__img.functionality__img--7(src="~/assets/images/functionality-7.png", alt="Фотография Анны Персильд")
+
+

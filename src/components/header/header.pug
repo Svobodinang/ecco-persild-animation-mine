@@ -1,0 +1,13 @@
+mixin header(blockData)
+    section.section.header
+        .header__content
+            h1.title.header__title!=blockData.title
+            p.subtitle.header__subtitle!=blockData.subtitle
+            p.header__text!=blockData.text
+        .header-collage
+            .header-collage__rect.header-collage__rect--accent(aria-hidden)
+            img.img.header-collage__img.header-collage__img--1(src="~/assets/images/header-1.png", alt="Портрет Юлии Персильд")
+            .header-collage__rect.header-collage__rect--shadow(aria-hidden)
+            img.img.header-collage__img.header-collage__img--2(src="~/assets/images/header-2.png", alt="Фотография Анны Персильд")
+            img.img.header-collage__img.header-collage__img--3(src="~/assets/images/header-3.png", alt="Фотография Анны Персильд")
+

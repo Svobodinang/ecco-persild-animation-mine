@@ -1,0 +1,48 @@
+#tpl {
+    .interview {
+        @media (--viewport-portrait-layout) {
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__question {
+            color: var(--color-accent);
+            font-family: $font-accent;
+            margin-bottom: em(30, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                font-size: em(14, $basePxMb);
+                margin-bottom: em(28, 14);
+            }
+        }
+
+        &.question-big-margin-bottom {
+            .interview__question {
+                margin-bottom: em(47, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    margin-bottom: em(28, $basePxMb);
+                }
+            }
+        }
+
+        &__answer-block {
+            margin-left: em(30, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-left: 0;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: em(18, $basePxDp);
+            }
+        }
+
+        &__name {
+            color: var(--color-accent);
+            font-family: $font-accent;
+        }
+    }
+}

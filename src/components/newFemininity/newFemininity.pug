@@ -1,0 +1,12 @@
+mixin newFemininity(blockData)
+    section.section.new-femininity
+        .new-femininity__title-block
+            h2.title.new-femininity__title!=blockData.title
+            p.new-femininity__text!=blockData.text
+        img.img.new-femininity__collage.new-femininity__collage--1(src="~/assets/images/new-femininity-1.png", alt="Коллаж с фотографиями Юлии и Анны Персильд")
+        .new-femininity__interview-section
+            .new-femininity__interview-block
+                +interview(blockData.interview)
+                img.img.new-femininity__img.new-femininity__img--2(src="~/assets/images/new-femininity-2.png", alt="Туфли ECCO")
+                img.img.new-femininity__img.new-femininity__img--3(src="~/assets/images/new-femininity-3.png", alt="Туфли ECCO")
+            .line.new-femininity__line(aria-hidden)

@@ -1,0 +1,10 @@
+mixin outdoor(blockData)
+    section.section.outdoor
+        img.img.outdoor__img.outdoor__img--1(src="~/assets/images/outdoor-1.png", alt="Фотография Анны Персильд")
+        .outdoor__title-block
+            h2.title.outdoor__title!=blockData.title
+            p.outdoor__text!=blockData.text
+        .outdoor__interview-block
+            .outdoor__line.line(aria-hidden)
+            +interview(blockData.interview, 'question-big-margin-bottom')
+        img.img.outdoor__img.outdoor__img--2(src="~/assets/images/outdoor-2.png", alt="Фотография Анны Персильд")

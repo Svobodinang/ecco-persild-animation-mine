@@ -1,0 +1,115 @@
+#tpl {
+    .new-femininity {
+        margin-bottom: em(52 + 77, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            margin-bottom: em(53, $basePxMb);
+        }
+
+        &__title-block {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: em(-26, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin-bottom: em(65, $basePxMb);
+            }
+        }
+
+        &__title {
+            max-width: em(1013, $fsTitle);
+            margin-bottom: em(33, $fsTitle);
+
+            @media (--viewport-portrait-layout) {
+                font-size: em(36, $basePxMb);
+                margin-bottom: em(8, 36);
+            }
+        }
+
+        &__text {
+            max-width: em(477, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                max-width: em(272, $basePxMb);
+            }
+        }
+
+        &__collage {
+            &--1 {
+                z-index: -1;
+                position: relative;
+                width: em(1440, $basePxDp);
+                margin-bottom: em(68, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    display: none;
+                }
+            }
+        }
+
+        &__img {
+            &--2 {
+                --k-progress-rotate: 0.2;
+
+                transform: rotate(calc(var(--parallax-progress) * 180deg * var(--k-progress-rotate))) !important;
+                position: absolute;
+                top: em(-68, $basePxDp);
+                right: em(38.4, $basePxDp);
+                width: em(648, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    position: static;
+                    width: em(301, $basePxMb);
+                    margin-bottom: em(-14, $basePxMb);
+                }
+            }
+
+            &--3 {
+                --from-x: #{em(-51 - 328, $basePxDp)};
+
+                width: em(643, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(354, $basePxMb);
+                }
+            }
+        }
+
+        &__interview-section {
+            display: flex;
+            position: relative;
+
+            @media (--viewport-portrait-layout) {
+                justify-content: center;
+            }
+        }
+
+        &__interview-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: em(16, $basePxDp) em(26, $basePxMb) em(-77, $basePxDp) em(51, $basePxDp);
+
+            @media (--viewport-portrait-layout) {
+                margin: 0;
+            }
+
+            .interview {
+                width: em(526, $basePxDp);
+
+                @media (--viewport-portrait-layout) {
+                    width: em(293, $basePxMb);
+                    margin-bottom: em(30, $basePxMb);
+                }
+            }
+        }
+
+        &__line {
+            @media (--viewport-portrait-layout) {
+                display: none;
+            }
+        }
+    }
+}
