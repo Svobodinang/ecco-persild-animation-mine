@@ -120,6 +120,8 @@
                 right: em(-561, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
+                    --k-progress-rotate: 0;
+
                     position: static;
                     width: em(633, $basePxMb);
                     right: auto;

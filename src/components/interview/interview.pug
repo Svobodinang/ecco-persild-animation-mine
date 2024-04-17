@@ -1,5 +1,5 @@
 mixin interview(interviewData, classes)
-    .interview.inview.from-opacity(class=classes)
+    .interview(class=classes)
         p.interview__question!=interviewData.question
         each answer in interviewData.answers
             p.interview__answer-block

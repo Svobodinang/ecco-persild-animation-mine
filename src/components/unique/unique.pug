@@ -6,8 +6,10 @@ mixin unique(blockData)
             p.unique__text.inview.from-opacity!=blockData.text
         .unique__interview-section
             .unique__collage
-                img.img.unique__img.unique__img--1.inview.from-transform(src="~/assets/images/unique-1.png", alt="Сумка ECCO")
-                img.img.unique__img.unique__img--2.inview.from-transform(src="~/assets/images/unique-2.png", alt="Фотография Анны Персильд")
+                a(href="https://www.ecco.ru/catalog/9108002/90000/")
+                    img.img.unique__img.unique__img--1(src="~/assets/images/unique-1.png", alt="Сумка ECCO")
+                img.img.unique__img.unique__img--2(src="~/assets/images/unique-2.png", alt="Фотография Анны Персильд")
             .unique__interview-block
                 +interview(blockData.interview, 'answers-big-margin-left')
-                img.img.unique__img.unique__img--3.inview.parallax(parallax src="~/assets/images/unique-3.png", alt="Кроссовок ECCO")
+                a(href="https://www.ecco.ru/catalog/803353/58513/")
+                    img.img.unique__img.unique__img--3.inview.parallax(parallax src="~/assets/images/unique-3.png", alt="Кроссовок ECCO")

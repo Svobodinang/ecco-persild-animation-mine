@@ -1,0 +1,69 @@
+#tpl {
+    .footer-bottom {
+        $logoW: 198;
+
+        font-size: rem($logoW);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: em(70, $logoW) 0;
+
+        @media (--viewport-mobile-pt) {
+            font-size: rem(119, true);
+            padding: em(70, $logoW) 0;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__logo {
+            width: em(198, $logoW);
+            height: em(54, $logoW);
+            position: relative;
+            margin-bottom: em(51, $logoW);
+        }
+
+        &__networks {
+            display: flex;
+            gap: em(25, $logoW);
+            align-items: center;
+
+            a {
+                transition: transform 0.35s ease;
+            }
+
+            a:hover {
+                transform: scale(1.08);
+            }
+        }
+
+        &__telegram {
+            width: em(57, $logoW);
+            height: em(58, $logoW);
+            position: relative;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &__vk {
+            width: em(79, $logoW);
+            height: em(46, $logoW);
+            position: relative;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

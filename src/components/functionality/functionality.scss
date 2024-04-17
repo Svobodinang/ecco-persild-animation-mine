@@ -118,6 +118,7 @@
             }
 
             &--6 {
+                pointer-events: none;
                 position: absolute;
                 width: em(246, $basePxDp);
                 top: em(150, $basePxDp);
@@ -137,6 +138,8 @@
                 margin-left: em(-10, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
+                    --k-progress-scale: 0;
+
                     width: em(304, $basePxMb);
                     margin-left: 0;
                 }

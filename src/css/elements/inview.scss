@@ -10,15 +10,15 @@
             }
         }
 
-        &.from-opacity {
-            &.entered {
-                transition: opacity 0.2s ease-in-out var(--delay);
-            }
+        // &.from-opacity {
+        //     &.entered {
+        //         transition: opacity 0.2s ease-in-out var(--delay);
+        //     }
 
-            &:not(.entered) {
-                opacity: 0;
-            }
-        }
+        //     &:not(.entered) {
+        //         opacity: 0;
+        //     }
+        // }
 
         &.parallax {
             transform:
