@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[478],{6478:(s,e,c)=>{s.exports=c.p+"assets/images/colorblock-1c3817541c998500a3689.png"}}]);

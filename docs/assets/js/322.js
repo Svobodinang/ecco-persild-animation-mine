@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[322],{1322:(s,e,a)=>{s.exports=a.p+"assets/images/accent-1ac2090d8a80680bc529d.png"}}]);
