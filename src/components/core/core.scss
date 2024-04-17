@@ -41,6 +41,8 @@
         }
 
         &__text {
+            --delay: 0.3s;
+
             width: em(477, $basePxDp);
 
             @media (--viewport-portrait-layout) {
@@ -79,7 +81,7 @@
             position: relative;
 
             &-1 {
-                width: em(697, $basePxDp);
+                width: em(690, $basePxDp);
                 height: em(258, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
@@ -128,6 +130,8 @@
                 margin-left: em(33, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
+                    --from-x: #{em(522, $basePxMb)};
+
                     width: em(522, $basePxMb);
                     margin-left: em(9, $basePxMb);
                 }

@@ -1,0 +1,35 @@
+#tpl {
+    .anim-title {
+        word-wrap: break-word;
+
+        &:not(.entered) {
+            .anim-title__symbol {
+                opacity: 0;
+                transform: translate(0, -100%);
+            }
+        }
+
+        &.entered {
+            .anim-title__symbol {
+                transition: opacity 0.35s ease;
+
+                // transition: transform 0.35s cubic-bezier(0.03, 0.2, 0, 1), opacity 0.1s ease;
+
+                // @for $i from 0 to 100 {
+                //     &:nth-child(#{$i}) {
+                //         transition-delay: calc(0.05s * #{$i} + var(--out-delay));
+                //     }
+                // }
+            }
+        }
+
+        &__word {
+            display: inline-block;
+        }
+
+        &__symbol {
+            display: inline-block;
+            min-width: 0.2em;
+        }
+    }
+}

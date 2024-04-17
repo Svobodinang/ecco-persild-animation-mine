@@ -38,6 +38,8 @@
         }
 
         &__text {
+            --delay: 0.3s;
+
             width: em(477, $basePxDp);
             margin-left: em(120, $basePxDp);
 

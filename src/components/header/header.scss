@@ -31,6 +31,9 @@
         }
 
         &__subtitle {
+            // --delay: 0.3s;
+            --delay: 0.1s;
+
             max-width: em(400, 28);
             margin-bottom: em(47, 28);
 
@@ -41,6 +44,9 @@
         }
 
         &__text {
+            // --delay: 0.4s;
+            --delay: 0.2s;
+
             max-width: em(470, $basePxDp);
 
             @media (--viewport-portrait-layout) {
@@ -102,6 +108,7 @@
                 }
 
                 &--3 {
+                    --delay: 0.3s;
                     --from-x: #{em(302 + 58, $basePxDp)};
 
                     bottom: em(82, $basePxDp);
@@ -109,6 +116,8 @@
                     width: em(302, $basePxDp);
 
                     @media (--viewport-portrait-layout) {
+                        --from-x: #{em(196, $basePxMb)};
+
                         bottom: em(-26, $basePxMb);
                         right: em(21, $basePxMb);
                         width: em(152, $basePxMb);

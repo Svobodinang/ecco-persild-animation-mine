@@ -29,6 +29,8 @@
         }
 
         &__text {
+            --delay: 0.1s;
+
             margin-left: em(53, $basePxDp);
             width: em(526, $basePxDp);
 
@@ -135,6 +137,8 @@
             }
 
             &--2 {
+                --k-progress-x: 0.1;
+
                 width: em(657, $basePxDp);
                 bottom: em(13, $basePxDp);
                 right: em(-648, $basePxDp);

@@ -2,7 +2,7 @@
     .functionality {
         --color-accent: #{$color-blue};
 
-        margin-bottom: em(-47, $basePxDp);
+        margin-bottom: em(-48, $basePxDp);
 
         @media (--viewport-portrait-layout) {
             margin-bottom: 0;
@@ -131,6 +131,8 @@
             }
 
             &--7 {
+                --k-progress-scale: 0.5;
+
                 width: em(620, $basePxDp);
                 margin-left: em(-10, $basePxDp);
 

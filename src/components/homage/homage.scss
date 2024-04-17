@@ -35,6 +35,8 @@
         }
 
         &__text {
+            --delay: 0.3s;
+
             width: em(477, $basePxDp);
 
             @media (--viewport-portrait-layout) {
@@ -116,6 +118,8 @@
                     right: em(-527, $basePxDp);
 
                     @media (--viewport-portrait-layout) {
+                        --from-x: #{em(298 + 34, $basePxMb)};
+
                         position: static;
                         width: em(298, $basePxMb);
                         right: auto;

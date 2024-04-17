@@ -33,6 +33,8 @@
         }
 
         &__text {
+            --delay: 0.1s;
+
             width: em(501, $basePxDp);
 
             @media (--viewport-portrait-layout) {
@@ -41,6 +43,8 @@
         }
 
         &__interview-section {
+            --delay: 0.2s;
+
             display: flex;
             padding-left: em(123, $basePxDp);
             position: relative;
@@ -132,6 +136,7 @@
 
                 &.inview.from-transform.entered {
                     transition-delay: 0.3s;
+                    transition-duration: 0.5s;
                 }
 
                 width: em(163, $basePxDp);
@@ -147,8 +152,10 @@
             }
 
             &--3 {
+                --k-progress-y: 0.4;
+
                 width: em(995, $basePxDp);
-                bottom: em(45, $basePxDp);
+                bottom: em(45 - 80, $basePxDp);
                 left: em(-435, $basePxDp);
 
                 @media (--viewport-portrait-layout) {

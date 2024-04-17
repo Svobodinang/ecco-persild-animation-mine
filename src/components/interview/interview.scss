@@ -28,6 +28,22 @@
             }
         }
 
+        &:not(.entered) {
+            .interview__answer-block {
+                transform: translateX(#{em(-30, $basePxDp)});
+
+                @media (--viewport-portrait-layout) {
+                    transform: unset;
+                }
+            }
+        }
+
+        &.entered {
+            .interview__answer-block {
+                transition: transform 0.4s cubic-bezier(0.45, -0.01, 0.37, 1) calc(var(--delay) + 0.3s);
+            }
+        }
+
         &__answer-block {
             margin-left: em(30, $basePxDp);
 

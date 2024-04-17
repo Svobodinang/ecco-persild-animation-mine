@@ -1,6 +1,9 @@
 #tpl {
     .new-femininity {
         margin-bottom: em(52 + 77, $basePxDp);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @media (--viewport-portrait-layout) {
             margin-bottom: em(53, $basePxMb);
@@ -11,7 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: em(-26, $basePxDp);
+            margin-bottom: em(39, $basePxDp);
 
             @media (--viewport-portrait-layout) {
                 margin-bottom: em(65, $basePxMb);
@@ -26,9 +29,19 @@
                 font-size: em(36, $basePxMb);
                 margin-bottom: em(8, 36);
             }
+
+            &-item {
+                display: inline-block;
+
+                &:nth-child(even) {
+                    --out-delay: 0.15s;
+                }
+            }
         }
 
         &__text {
+            --delay: 0.1s;
+
             max-width: em(477, $basePxDp);
 
             @media (--viewport-portrait-layout) {
@@ -38,9 +51,11 @@
 
         &__collage {
             &--1 {
+                --k-progress-x: 0.1;
+
                 z-index: -1;
                 position: relative;
-                width: em(1440, $basePxDp);
+                width: em(1440 * 1.1, $basePxDp);
                 margin-bottom: em(68, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
@@ -72,12 +87,15 @@
                 width: em(643, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
+                    --from-x: #{em(-354, $basePxMb)};
+
                     width: em(354, $basePxMb);
                 }
             }
         }
 
         &__interview-section {
+            width: 100%;
             display: flex;
             position: relative;
 
