@@ -159,6 +159,8 @@
                 left: em(-435, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
+                    --k-progress-y: 0;
+
                     width: em(525, $basePxMb);
                     left: auto;
                     bottom: auto;
@@ -166,6 +168,12 @@
                     margin-left: em(-288, $basePxMb);
                     margin-top: em(-66, $basePxMb);
                 }
+            }
+        }
+
+        .gift {
+            @media (--viewport-portrait-layout) {
+                align-self: flex-start;
             }
         }
     }

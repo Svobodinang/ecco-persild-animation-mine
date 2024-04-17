@@ -2,11 +2,15 @@
     .footer {
         background-color: $color-red;
         padding: em(65, $basePxDp) 0;
-        color: white;
         display: flex;
         justify-content: center;
-        text-align: center;
         position: relative;
+
+        p {
+            text-align: center;
+            font-weight: $font-weight-main;
+            color: white;
+        }
 
         @media (--viewport-portrait-layout) {
             padding: em(126, $basePxMb) 0;
