@@ -11,7 +11,7 @@ function start() {
     const videoBlockId = 'video';
 
     window.addEventListener('load', () => {
-        insertVideo(videoBlockId, data[3].link, data[3].poster, data[3].linkPt, data[3].poster);
+        insertVideo(videoBlockId, data[3].link, data[3].linkPt);
         addInviewByScroll();
     });
 }

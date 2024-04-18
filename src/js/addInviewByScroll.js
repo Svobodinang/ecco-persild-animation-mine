@@ -20,6 +20,26 @@ const addInviewByScroll = () => {
             }
         });
     });
+
+    const videoEl = document.getElementById('video');
+
+    ScrollTrigger.create({
+        trigger: videoEl,
+        start: 'top 20%',
+        end: 'bottom 20%',
+        onEnter: () => {
+            videoEl.play();
+        },
+        onLeave: () => {
+            videoEl.pause();
+        },
+        onEnterBack: () => {
+            videoEl.play();
+        },
+        onLeaveBack: () => {
+            videoEl.pause();
+        }
+    });
 };
 
 export default () => {

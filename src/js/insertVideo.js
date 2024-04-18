@@ -1,4 +1,4 @@
-export default function insertVideo(idBox, src, poster, srcPt, posterPt) {
+export default function insertVideo(idBox, src, srcPt) {
     const videoBox = document.getElementById(idBox);
     const source = document.createElement('source');
 
@@ -9,19 +9,19 @@ export default function insertVideo(idBox, src, poster, srcPt, posterPt) {
     if (isPt()) {
         vSrc = srcPt;
 
-        if (posterPt) {
-            import(`../assets/images/${posterPt}`).then((modulePt) => {
-                videoBox.setAttribute('poster', modulePt.default);
-            });
-        }
+        // if (posterPt) {
+        //     import(`../assets/images/${posterPt}`).then((modulePt) => {
+        //         videoBox.setAttribute('poster', modulePt.default);
+        //     });
+        // }
     } else {
         vSrc = src;
 
-        if (poster) {
-            import(`../assets/images/${poster}`).then((module) => {
-                videoBox.setAttribute('poster', module.default);
-            });
-        }
+        // if (poster) {
+        //     import(`../assets/images/${poster}`).then((module) => {
+        //         videoBox.setAttribute('poster', module.default);
+        //     });
+        // }
     }
 
     source.setAttribute('src', vSrc);
