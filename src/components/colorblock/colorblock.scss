@@ -162,13 +162,13 @@
                 --k-progress-x: 0.5;
 
                 width: em(365, $basePxDp);
-                top: em(-218 - 546, $basePxDp);
+                top: em(-210 - 546, $basePxDp);
                 left: em(0, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
-                    width: em(144, $basePxMb);
-                    top: em(-6, $basePxMb);
-                    left: em(64, $basePxMb);
+                    width: em(146, $basePxMb);
+                    top: em(-30, $basePxMb);
+                    left: em(61, $basePxMb);
                 }
             }
 
@@ -176,12 +176,12 @@
                 --k-progress-x: -0.2;
 
                 width: em(1113, $basePxDp);
-                bottom: em(32, $basePxDp);
+                bottom: em(-43, $basePxDp);
                 left: em(-362, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
-                    width: em(439, $basePxMb);
-                    bottom: em(0, $basePxDp);
+                    width: em(442, $basePxMb);
+                    bottom: em(-3, $basePxMb);
                     left: auto;
                     right: em(0, $basePxDp);
                 }
