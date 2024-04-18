@@ -112,16 +112,16 @@
                     --delay: 0.3s;
                     --from-x: #{em(302 + 58, $basePxDp)};
 
-                    bottom: em(82, $basePxDp);
-                    right: em(58, $basePxDp);
-                    width: em(302, $basePxDp);
+                    bottom: em(18, $basePxDp);
+                    right: em(22, $basePxDp);
+                    width: em(374, $basePxDp);
 
                     @media (--viewport-portrait-layout) {
                         --from-x: #{em(196, $basePxMb)};
 
-                        bottom: em(-26, $basePxMb);
-                        right: em(21, $basePxMb);
-                        width: em(152, $basePxMb);
+                        bottom: em(-53, $basePxMb);
+                        right: em(-4, $basePxMb);
+                        width: em(196, $basePxMb);
                     }
                 }
             }

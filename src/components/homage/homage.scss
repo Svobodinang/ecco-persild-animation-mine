@@ -120,11 +120,12 @@
                     @media (--viewport-portrait-layout) {
                         --from-x: #{em(298 + 34, $basePxMb)};
 
+                        margin-top: em(-206 - 16, $basePxMb);
                         position: static;
-                        width: em(298, $basePxMb);
+                        width: em(365, $basePxMb);
                         right: auto;
                         bottom: auto;
-                        margin-right: em(34 - 28, $basePxMb);
+                        margin-right: em(40, $basePxMb);
                     }
                 }
             }

@@ -21,7 +21,7 @@
             align-items: center;
             text-align: center;
             gap: em(34, $basePxDp);
-            margin-bottom: em(-31 - 76, $basePxDp);
+            margin-bottom: em(-194 - 76, $basePxDp);
 
             @media (--viewport-portrait-layout) {
                 gap: em(22, $basePxMb);
@@ -56,12 +56,13 @@
         }
 
         &__img {
-            width: em(487, $basePxDp);
-            margin-left: em(-31, $basePxDp);
+            width: em(568, $basePxDp);
+            margin-left: em(-47, $basePxDp);
 
             @media (--viewport-portrait-layout) {
-                width: em(241, $basePxMb);
-                margin-left: 0;
+                width: em(278, $basePxMb);
+                margin-top: em(-(78 - 12), $basePxMb);
+                margin-left: em(-(59 - 23), $basePxMb);
             }
         }
 

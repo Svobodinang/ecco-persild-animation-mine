@@ -62,10 +62,10 @@
                 width: em(672, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
-                    margin-top: 0;
                     width: em(342, $basePxMb);
                     margin-left: em(20, $basePxMb);
                     margin-bottom: em(-145, $basePxMb);
+                    margin-top: em(-(285 - 116), $basePxMb);
                 }
             }
 

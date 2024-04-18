@@ -70,21 +70,24 @@
 
                 transform: rotate(calc(var(--parallax-progress) * 180deg * var(--k-progress-rotate))) !important;
                 position: absolute;
-                top: em(-68, $basePxDp);
-                right: em(38.4, $basePxDp);
-                width: em(648, $basePxDp);
+                top: em(-34, $basePxDp);
+                right: em(11, $basePxDp);
+                width: em(946, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
                     position: static;
-                    width: em(301, $basePxMb);
+                    width: em(451, $basePxMb);
                     margin-bottom: em(-14, $basePxMb);
+                    margin-right: em(112 + 17, $basePxMb);
                 }
             }
 
             &--3 {
                 --from-x: #{em(-51 - 328, $basePxDp)};
 
-                width: em(643, $basePxDp);
+                width: em(621, $basePxDp);
+                margin-top: em(-202 - 134, $basePxDp);
+                margin-bottom: em(-100, $basePxDp);
 
                 @media (--viewport-portrait-layout) {
                     --from-x: #{em(-354, $basePxMb)};
