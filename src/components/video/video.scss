@@ -5,7 +5,7 @@
         margin-bottom: em(105, $basePxDp);
 
         @media (--viewport-mobile-pt) {
-            width: em(360, $basePxMb);
+            width: 100%;
             height: em(182, $basePxMb);
             margin-bottom: em(55, $basePxMb);
         }

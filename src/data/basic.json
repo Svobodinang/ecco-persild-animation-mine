@@ -43,8 +43,9 @@
     },
     {
         "component": "video",
-        "link": "https://edge-msk-3.kinescopecdn.net/844aa7ad-a948-4885-87ba-73712051cb71/videos/9a74fe15-ac4b-43cd-9ec0-406be4182481/assets/c9789741-f02b-4232-a479-c81e0bd2c281/original.mp4?kinescope_project_id=9d8d3ae9-9cb7-4833-b067-c58bf71772c4#t=0.1",
-        "linkPt": "https://edge-msk-8.kinescopecdn.net/844aa7ad-a948-4885-87ba-73712051cb71/videos/a5801fd1-6557-4144-8f86-23e45cfc2a43/assets/ba77bd34-db17-451c-9ec6-654326b7c0ca/original.mp4?kinescope_project_id=9d8d3ae9-9cb7-4833-b067-c58bf71772c4#t=0.1"
+        "poster": "poster.jpg",
+        "link": "https://edge-msk-7.kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/8d7273a7-5522-47c4-80bd-a733a07b7c03/mp4/591fa89f-412e-4253-9423-70d201dbb6f4/3e37d13d-3cae-471f-9e10-3145f3df5054.mp4?kinescope_project_id=199753e1-a503-4411-80f0-819432ff553b",
+        "linkPt": "https://edge-msk-7.kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/8d7273a7-5522-47c4-80bd-a733a07b7c03/mp4/591fa89f-412e-4253-9423-70d201dbb6f4/3e37d13d-3cae-471f-9e10-3145f3df5054.mp4?kinescope_project_id=199753e1-a503-4411-80f0-819432ff553b"
     },
     {
         "component": "newFemininity",
