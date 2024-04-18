@@ -1,4 +1,9 @@
 #tpl {
+    .video-section {
+        display: flex;
+        justify-content: center;
+    }
+
     .video {
         width: em(1440, $basePxDp);
         height: em(727, $basePxDp);
